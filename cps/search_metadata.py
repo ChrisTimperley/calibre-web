@@ -69,7 +69,6 @@ def list_classes(provider_list):
         ):
             if (
                 inspect.isclass(obj)
-                and name != "Metadata"
                 and issubclass(obj, Metadata)
             ):
                 classes.append(obj())
